@@ -3,6 +3,13 @@ module.exports = {
   description: 'This is Altria\'s Documents Page. All of these are written by Chinese or English. Welcome everyone!',
   theme: 'reco',
   base: '/altria-documents-dist/',
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@imgs': 'assets/imgs'
+      }
+    }
+  },
   locales: {
     '/zh-CN/': {
       lang: 'zh-CN',
